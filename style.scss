@@ -401,6 +401,12 @@ span{
   section.features-section {
     padding-right: 20px;
   }
+  .contact-section{
+    input,
+textarea{
+  width:90%;
+}
+  }
 }
 
 
@@ -510,5 +516,12 @@ span{
 
   ul.features-list li{
     margin-left: -20px;
+  }
+
+  .contact-section{
+    input,
+textarea{
+  width:100%;
+}
   }
 }
