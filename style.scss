@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: "Space Mono", monospace;
   box-sizing: border-box;
+ 
 }
 
 .navbar {
@@ -114,20 +115,31 @@ section.features-section {
   color: white;
   line-height: 30px;
   font-size: 20px;
-
+  padding-right: 0; 
+  text-wrap: wrap;
+  overflow-y:hidden;
 }
 ul.features-list {
 
-  padding-left: 0.1em;
+  padding-left: 0;
+ 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   margin-left: 4%;
 
+ 
+  
+  
   li {
     font-size: 1.1em;
     margin-bottom: 1em;
     margin-left: 1em;
     position: relative;
+    color: red;
+    font-size: 20px;
+    margin-bottom: 1em;
+    margin-left: -40px;
+    word-wrap: break-word;
 
     &:before {
       content: "";
@@ -140,6 +152,9 @@ ul.features-list {
       margin-right: 0.2em;
       left: -2.8em;
       margin-top: -1em;
+
+      margin-right: 0.2em;
+
     }
   }
 }
@@ -188,7 +203,10 @@ ul.features-list {
     background-position: center;
     display: flex;
     justify-content: center;
-
+ 
+      .contact-left{
+        margin-left: 20%;
+      }
    img {
     width: 400px;
     height: 400px;
@@ -200,21 +218,24 @@ h2 {
   text-align: center;
   color:white;
   text-transform: uppercase;
+  margin-right: 120px;
 }
 label {
   display: block;
   font-size: 1.2em;
   margin-bottom: 1em;
   color:white;
+  
 }
 
 input,
 textarea {
-  width: 100%;
+  width: 60%;
   padding: 0.8em;
   margin-bottom: 1em;
   border-radius: 0.3em;
   border: 1px solid grey;
+
 }
 
 input[type="submit"] {
@@ -242,7 +263,9 @@ nav {
   background-color: #20272e;
   height: 100vh;
   padding: 2em;
+  
   color: white;
+  overflow: hidden;
 }
 ul.primary-nav {
   margin-top: 5em;
@@ -302,7 +325,7 @@ span{
   width: 100%;
   height: 50px;
   overflow: hidden; 
-  // white-space: nowrap; 
+
   position: relative;
 }
 
@@ -310,8 +333,8 @@ span{
   margin-top: -3px;
   position: absolute;
   display: inline-block;
-        white-space: nowrap; /* Prevent wrapping */
-        animation: marquee 40s linear infinite; /* Adjust speed and direction as needed */
+        white-space: nowrap; 
+        animation: marquee 40s linear infinite; 
         transform: translateX(0);
 }
 
@@ -374,6 +397,9 @@ span{
   }
   .navbar nav a {
     color: white;
+  }
+  section.features-section {
+    padding-right: 20px;
   }
 }
 
