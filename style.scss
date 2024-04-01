@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Carter+One&family=Great+Vibes&family=Raleway+Dots&family=Stalinist+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  font-family: "Space Mono", monospace;
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 2rem;
+  justify-content: center;
+  background-image: url("/img/bg1.jpg");
+
+  .logo {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    font-size: 1.2em;
+
+    font-family: "Stalinist One", sans-serif;
+
+    span {
+      color: red;
+    }
+  }
+
+  nav {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    place-content: space-between;
+  }
+
+  .mobile-menu {
+    cursor: pointer;
+    color: white;
+  }
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: center;
+  background-image: url("/img/mainH.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.left-col {
+  .subhead {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.3em;
+    color: white;
+  }
+  h1 {
+    font-size: 2.5em;
+    margin-top: 0.2em;
+
+    color: white;
+    font-family: freight big pro;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  .primary-cta {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    padding: 0.7em 1em;
+    border-radius: 5em;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid white;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.hero-img {
+  width: 70%;
+  margin-top: 3em;
+}
+
+section.features-section {
+  background-image: url('/img/b2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  line-height: 30px;
+  font-size: 20px;
+
+}
+ul.features-list {
+
+  padding-left: 0.1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  margin-left: 4%;
+
+  li {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-image: url("/img/astro1.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 0.2em;
+      left: -2.8em;
+      margin-top: -1em;
+    }
+  }
+}
+
+.features-section img {
+  display: none;
+}
+.testimonials-section {
+  background-image:url('/img/test1pic.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  li {
+  
+    background-color: rgba(14, 12, 12, 0.7); 
+    cursor: pointer;
+    outline: none; 
+    transition: background-color 0.3s ease;
+    box-shadow: 0 14px 6px rgba(10, 0, 0, 0.1); 
+    text-align: center;
+    padding: 2em 1em;
+    width: 80%;
+    margin: 0 auto 5em auto;
+    border-radius: 1em;
+       
+    &:hover{
+        background-color: rgba(14, 12, 12, 1); 
+        border: 1px white solid;
+       
+    }
+    img {
+      width: 5em;
+      height: 5em;
+      border: 5px solid #d61900;
+      border-radius: 50%;
+      margin-top: -4.4em;
+    }
+  }
+}
+
+.contact-section {
+    background-image:url('img/lastH.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+
+   img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  color:white;
+  text-transform: uppercase;
+}
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  color:white;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  border: 1px solid grey;
+}
+
+input[type="submit"] {
+  background-color: rgb(255, 52, 52);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5em;
+  display: inline-block;
+  padding: 0.8em 2em;
+  width: unset;
+  cursor: pointer;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background-color: #20272e;
+  height: 100vh;
+  padding: 2em;
+  color: white;
+}
+ul.primary-nav {
+  margin-top: 5em;
+}
+li {
+  a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    font-size: 1.4em;
+    text-align: right;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+.mobile-menu-exit {
+  float: right;
+  color: white;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+
+.footer {
+ padding-top: 30px;
+ text-align: center;
+ align-items: center;
+    background-color:rgb(12, 12, 12);
+    display: flex;
+    justify-content: center;
+
+    .logo {
+        text-decoration: none;
+        font-weight: 700;
+        color: white;
+        font-size: 1.2em;
+    
+        font-family: "Stalinist One", sans-serif;
+    
+        span {
+          color: red;
+        }
+
+       
+}
+p{color: white;}
+span{
+    color:white;
+}
+}
+
+.line-one {
+  background-color: yellow;
+  width: 100%;
+  height: 50px;
+  overflow: hidden; 
+  // white-space: nowrap; 
+  position: relative;
+}
+
+.line-one h1 {
+  margin-top: -3px;
+  position: absolute;
+  display: inline-block;
+        white-space: nowrap; /* Prevent wrapping */
+        animation: marquee 40s linear infinite; /* Adjust speed and direction as needed */
+        transform: translateX(0);
+}
+
+@keyframes marquee {
+  0% {
+      transform: translateX(0); 
+  }
+  100% {
+      transform: translateX(-100%); 
+  }
+}
+@media only screen and (min-width: 768px) {
+  .navbar .mobile-menu,
+  .navbar .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+
+    ul {
+      display: flex;
+    }
+    a {
+      color: black;
+      font-size: 1em;
+      padding: 0.1em 1em;
+    }
+    ul.primary-nav {
+      margin: 0;
+    }
+
+    li.go-premium-cta a {
+      color: rgb(253, 63, 34);
+      border: 3px solid rgb(239, 67, 64);
+      border-radius: 5em;
+      margin-top: -0.2em;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: rgb(252, 85, 85);
+        color: white;
+        font-weight: normal;
+        border: 3px solid white;
+      }
+    }
+  }
+  .contact-right img {
+    width: 300px;
+    height: 300px;
+  }
+  .navbar nav a {
+    color: white;
+  }
+}
+
+
+
+@media only screen and (min-width: 1180px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+  section {
+    padding: 10em 4em;
+  }
+
+  .hero .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+
+    .left-col {
+      margin: 1em 0 0 5em;
+
+      h1 {
+        font-size: 3em;
+        width: 90%;
+      }
+    }
+
+    .hero-img {
+      width: 40%;
+      margin: -1.5em 5em 0 0;
+    }
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 20px;
+  }
+
+  ul.features-list {
+    display: block;
+    margin-left: 5em;
+
+    li {
+      font-size: 1.4em;
+      &:before {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+  .features-section {
+    position: relative;
+  }
+
+  .features-section img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 400px;
+    bottom: 4em;
+  }
+  .testimonials-section ul {
+    display: flex;
+
+    li {
+      margin: 0 1em;
+      
+    }
+  }
+  .contact-section {
+    position: relative;
+
+    .container {
+      display: flex;
+    }
+  }
+
+  .contact-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48%;
+    height: 100%;
+
+    img {
+      margin-top: 25%;
+      width: 500px;
+      height: 500px;
+    }
+  }
+
+  .navbar nav a {
+    color: white;
+  }
+
+  .hero-img {
+    width: 1200px;
+    height: 40%;
+    margin-top: 3em;
+  }
+
+  .features-section .container img{
+    width:500px;
+    margin-right: 10px;
+  }
+
+  ul.features-list li{
+    margin-left: -20px;
+  }
+}
