@@ -124,9 +124,12 @@ ul.features-list {
   padding-left: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  margin-left: 7%;
+  margin-left: 17%;
+  list-style-type: none;
+
 
   li {
+
     font-size: 1.1em;
     margin-bottom: 1em;
     margin-left: 1em;
@@ -136,6 +139,8 @@ ul.features-list {
     margin-bottom: 1em;
     margin-left: -40px;
     word-wrap: break-word;
+    width:75%;
+  
 
     &:before {
       content: "";
@@ -401,6 +406,13 @@ textarea{
   width:90%;
 }
   }
+  
+  ul.features-list li{
+
+    width:100%;
+   
+    
+  }
 }
 
 
@@ -510,6 +522,8 @@ textarea{
 
   ul.features-list li{
     margin-left: -20px;
+    width:100%;
+    
   }
 
   .contact-section{

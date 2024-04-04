@@ -110,7 +110,8 @@ ul.features-list {
   padding-left: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  margin-left: 7%;
+  margin-left: 17%;
+  list-style-type: none;
 }
 ul.features-list li {
   font-size: 1.1em;
@@ -122,6 +123,7 @@ ul.features-list li {
   margin-bottom: 1em;
   margin-left: -40px;
   word-wrap: break-word;
+  width: 75%;
 }
 ul.features-list li:before {
   content: "";
@@ -369,6 +371,9 @@ li a:hover {
   .contact-section textarea {
     width: 90%;
   }
+  ul.features-list li {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 1180px) {
   .container {
@@ -457,6 +462,7 @@ li a:hover {
   }
   ul.features-list li {
     margin-left: -20px;
+    width: 100%;
   }
   .contact-section input,
   .contact-section textarea {
